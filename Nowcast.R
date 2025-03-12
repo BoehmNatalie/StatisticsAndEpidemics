@@ -1,5 +1,6 @@
 ############## Execution ###################
-# Liste der benötigten Packages
+
+# install needed packages
 packages <- c(
   "dplyr",
   "lubridate",
@@ -17,18 +18,16 @@ packages <- c(
   
 )
 
-# Installieren, falls noch nicht vorhanden
 install_if_missing <- function(pkg) {
   if (!requireNamespace(pkg, quietly = TRUE)) {
     install.packages(pkg)
   }
 }
 
-# Über alle Packages gehen und installieren
 invisible(sapply(packages, install_if_missing))
 
-# Danach laden
 lapply(packages, library, character.only = TRUE)
+#install needed packages fertig
 
 ###############################################################################
 ###############################################################################

@@ -1,12 +1,29 @@
 ########## analyse data ##########
 ########## plots etc can be changed to case/death data
-########## cases daa did not work well 
+########## cases data did not work well 
 ########## was also checked
-library(lubridate)
-library(dplyr)
-library(ggplot2)
-library(tidyr)
-library(stringr)
+
+# install needed packages
+packages <- c(
+  "dplyr",
+  "lubridate",
+  "ggplot2",
+  "tidyr",
+  "stringr"
+)
+
+install_if_missing <- function(pkg) {
+  if (!requireNamespace(pkg, quietly = TRUE)) {
+    install.packages(pkg)
+  }
+}
+
+invisible(sapply(packages, install_if_missing))
+
+
+lapply(packages, library, character.only = TRUE)
+#install needed packages fertig
+
 Sys.setlocale("LC_TIME", "en_US") 
 
 

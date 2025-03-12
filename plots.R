@@ -1,10 +1,27 @@
 ########## plots for Seminararbeit ##########
 source("prepfiles/allinone.R")
 source("prepfiles/plotfunctions.R")
-library(lubridate)
-library(dplyr)
-library(ggplot2)
-library(tidyr)
+
+# install needed packages
+packages <- c(
+  "dplyr",
+  "lubridate",
+  "ggplot2",
+  "tidyr"
+)
+
+install_if_missing <- function(pkg) {
+  if (!requireNamespace(pkg, quietly = TRUE)) {
+    install.packages(pkg)
+  }
+}
+
+invisible(sapply(packages, install_if_missing))
+
+
+lapply(packages, library, character.only = TRUE)
+#install needed packages fertig
+
 Sys.setlocale("LC_TIME", "en_US") 
 
 ########## reporting_hospitalizations must be uploaded from ##########
