@@ -18,18 +18,19 @@ The key parameters that need to be adjusted for different nowcasts using the van
 
 The parameters mean delay, maximal delay, and days back should remain unchanged to ensure the nowcasts are comparable to those presented in the paper.
 
-For EpiNow2, one can adjust:
+For Epinow, one can adjust:
 
     locationfilter,
     end_date,
     start_date.
 
-According to the seminar paper, max_delay can be set to 20 for GE and 10 for BS.
+According to the seminar paper, max_delay can be set to 20 for GE (Geneva) and 10 for BS (Basel City) (CH is Switzerland in geoRegions).
 Note: Nowcast time spans were chosen to cover two days to allow for performance testing currently.
 
 Plotting Results:
 
 To replot the results using plots.R, the corresponding CSV files generated during the nowcasts are loaded from the Epinow and Kassteele directories. Here, horizons and location filters can also be adjusted to customize the plots.
+
 Other Scripts:
 
 The prepare_model_output.R script is used only to concatenate outputs from monthly nowcasts and is not required for others.
