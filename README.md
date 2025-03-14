@@ -32,8 +32,8 @@ Plotting Results:
 To replot the results using plots.R, the corresponding CSV files generated during the nowcasts are loaded from the Epinow and Kassteele directories. Here, horizons and location filters can also be adjusted to customize the plots.
 Other Scripts:
 
-    The prepare_model_output.R script is used only to concatenate outputs from monthly nowcasts and is not required for others.
-    The dataanalysis.R script documents the data analysis process. In this file, location filters, dates, and even the dataset can be modified (e.g. use cases with maybe some renames).
+The prepare_model_output.R script is used only to concatenate outputs from monthly nowcasts and is not required for others.
+The dataanalysis.R script documents the data analysis process. In this file, location filters, dates, and even the dataset can be modified (e.g. use cases with maybe some renames).
 
 Note on Auxiliary Folders:
 
