@@ -122,8 +122,8 @@ while (current_date <= end_date) {
 
 
 ######### später speichern der Ergebnisse
-#write.csv(GEcombined_ergebnis_weekday,"Epinow/CHergebnisstartFeb.csv",row.names=FALSE)
-#write.csv(GEcombined_wis_weekday,"Epinow/CHwisstartFeb.csv",row.names=FALSE)
-#write.csv(GEcombined_final_summary_weekday,"Epinow/CHfinalsummarystartFeb.csv",row.names=FALSE)
-#write.csv(GEcombined_df_truth_filtered_weekday,"Epinow/CHtruthstartFeb.csv",row.names=FALSE)
-#write.csv(GEcombined_df_nowcast_weekday,"Epinow/CHnowcaststartFeb.csv",row.names=FALSE)
+#write.csv(CHcombined_ergebnis_weekday,"Epinow/CHergebnisstartFeb.csv",row.names=FALSE)
+#write.csv(CHcombined_wis_weekday,"Epinow/CHwisstartFeb.csv",row.names=FALSE)
+#write.csv(CHcombined_final_summary_weekday,"Epinow/CHfinalsummarystartFeb.csv",row.names=FALSE)
+#write.csv(CHcombined_df_truth_filtered_weekday,"Epinow/CHtruthstartFeb.csv",row.names=FALSE)
+#write.csv(CHcombined_df_nowcast_weekday,"Epinow/CHnowcaststartFeb.csv",row.names=FALSE)
